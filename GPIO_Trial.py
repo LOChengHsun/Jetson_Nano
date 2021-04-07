@@ -16,6 +16,7 @@ print("LED_OUPUT_Status=" + str(LED_OUPUT_Status))
 print("LED_OUPUT2_Status=" + str(LED_OUPUT2_Status))
 # setup()語法：GPIO.setup({channel | chan_list}, {GPIO.OUT | GPIO.IN}, [initial= {GPIO.HIGH | GPIO.LOW}])
 
+
 while True:
     if( GPIO.input(LED_INPUT_Num) ): # input()，當針腳已被設定高低電位時，可以用此函式取得該針腳的當下狀態為何。若偵測輸入為高電位
         time.sleep(1)
